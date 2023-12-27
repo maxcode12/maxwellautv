@@ -2,17 +2,18 @@ import { useEffect, useState } from "react";
 import apiClient from "../services/api-client";
 import { CanceledError } from "axios";
 
-interface Videos{
+export interface Video{
     id: number;
     name:string;
+    background_image: string;
 }
 
 interface FetchVideosResponse{
     count: number;
-    results: Videos[];
+    results: Video[];
 }
 const useVideos = () => {
-    const [videos, setVideos] = useState<Videos[]>([]);
+    const [videos, setVideos] = useState<Video[]>([]);
     const [error, setError] = useState('');
 
     useEffect(() => {
