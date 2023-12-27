@@ -11,9 +11,9 @@ function App() {
   return (
     <>
       <Grid templateAreas={{base: `"nav" "main" `,
-        lg:` "header header" "aside main"
+        lg:` "nav nav" "aside main"
       `}}>
-        <GridItem area={'header'}>
+        <GridItem area={'nav'}>
           <NavBar />
         </GridItem>
         <Show above ="lg"> 
