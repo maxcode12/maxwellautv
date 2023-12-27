@@ -2,6 +2,7 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import { Grid, GridItem, Show } from '@chakra-ui/react'
 import NavBar from './components/NavBar'
+import VideoGrid from './components/VideoGrid'
 
 
 
@@ -24,8 +25,8 @@ function App() {
          </Show>
         
           <GridItem area={'main'}>
-            Main content
-            </GridItem>
+            <VideoGrid/>
+          </GridItem>
         
       </Grid>
     </>
